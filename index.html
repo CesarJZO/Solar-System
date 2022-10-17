@@ -12,8 +12,10 @@
 
 <body>
   <a-scene embedded arjs>
-    <a-entity scale=".2 .2 2"></a-entity>
-    <a-sphere position="0 3 0" rotation="45 0 0" radius="2" color="white" src="textures/sun.png" animation="property: rotation; to: 0 360 0; loop: true; dur: 20000"></a-sphere>
+    <a-sphere position="0 3 0" rotation="45 0 0" radius="2" color="white" src="textures/sun.png" animation="property: rotation; to: 0 360 0; loop: true; dur: 20000">
+      <a-sphere position="5 0 0" radius="0.5" color="white" src="textures/earth.jpg" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-sphere>
+    </a-sphere>
+
     <a-marker-camera preset="hiro"></a-marker-camera>
   </a-scene>
 </body>
